@@ -39,7 +39,6 @@ int main() {
       break; // need to terminate the problem
     }
   }
-  // all celles with i=0 to 2 have been inputted above but no winner yet
   cout << "Tie!" << endl;
 
   // show the game to console
