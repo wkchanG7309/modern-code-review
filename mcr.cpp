@@ -1,4 +1,4 @@
-bool isWin(char game[3][3]) {
+bool isWin(char game[3][3]) { // Nice Look UP Table!!
   bool win = false;
   if (game[0][0] == game[0][1] && game[0][1] == game[0][2] && (game[0][0] == 'X' || game[0][0] == 'O')) win = true;
   if (game[1][0] == game[1][1] && game[1][1] == game[1][2] && (game[1][0] == 'X' || game[1][0] == 'O')) win = true;
@@ -28,7 +28,7 @@ int main() {
       cout << "Player 1: ";
     else
       cout << "Player 2: ";
-    cout << "Which cell to mark? i:[1..3], j:[1..3]: ";
+    cout << "Which cell to mark? i:[0..2], j:[0..2]: ";// change to [0..2]
     cin >> i >> j;
     if (turn == false)
       game[i][j] = 'X';
